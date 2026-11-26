@@ -11,6 +11,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-26 | general | 1Password breach, Ubuntu kernel patch lag, AI math claims |
 
 ## Skills Built
 | Skill | Date | Notes |

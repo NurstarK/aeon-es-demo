@@ -1,0 +1,301 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Daily digest - 2026-11-26"
+      },
+      "children": [
+        "tldr",
+        "sep1",
+        "item1",
+        "sep2",
+        "item2",
+        "sep3",
+        "item3",
+        "sep4",
+        "also_heading",
+        "also_stack"
+      ]
+    },
+    "tldr": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: 1Password disclosed a source-code and CI/CD breach via an employee GitHub account, and Ubuntu is reportedly still unpatched for a remote kernel TCP flaw.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "i1_title",
+        "i1_badges",
+        "i1_body",
+        "i1_why",
+        "i1_link"
+      ]
+    },
+    "i1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "1. 1Password discloses breach of GitHub account, source code and CI/CD",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "i1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "i1_b1",
+        "i1_b2"
+      ]
+    },
+    "i1_b1": {
+      "type": "Badge",
+      "props": {
+        "text": "Breach",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "i1_b2": {
+      "type": "Badge",
+      "props": {
+        "text": "Phishing risk",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "i1_body": {
+      "type": "Text",
+      "props": {
+        "text": "Attacker used an employee's GitHub account to push malicious code to backend services, which pulled account records (names, emails, IDs, public keys, SRP parameters) for a subset of customers. Some invitation and recovery tokens were included. 1Password says vault contents were not accessed.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "i1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: expect phishing that mentions 1Password invitations or account recovery; the CI/CD secrets exposure is worth watching for follow-up.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "i1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Update on Nov 2026 security incident",
+        "href": "https://1password.com/blog/update-on-nov-2026-security-incident",
+        "source": "1password.com"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "i2_title",
+        "i2_badges",
+        "i2_body",
+        "i2_why",
+        "i2_link"
+      ]
+    },
+    "i2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Researcher: Ubuntu unpatched 9+ days on remote kernel TCP flaw (CVE-2026-99288)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "i2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "i2_b1",
+        "i2_b2"
+      ]
+    },
+    "i2_b1": {
+      "type": "Badge",
+      "props": {
+        "text": "Vulnerability",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "i2_b2": {
+      "type": "Badge",
+      "props": {
+        "text": "Unpatched",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "i2_body": {
+      "type": "Text",
+      "props": {
+        "text": "Hanno Böck reports Ubuntu had no fix for \"NoisyTCP\" as of Nov 25 while other distros did, plus an unpatched AMD KVM host escape (CVE-2026-99312). These are his claims; no Ubuntu response was included.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "i2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Ubuntu hosts exposed to the network may need mitigations or a different kernel until fixes ship.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "i2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "oss-security: Hanno Böck on Ubuntu NoisyTCP and AMD KVM",
+        "href": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+        "source": "openwall.com"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "item3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "i3_title",
+        "i3_badges",
+        "i3_body",
+        "i3_link"
+      ]
+    },
+    "i3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Aaronson claims AI labs have proven major open math results",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "i3_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "i3_b1"
+      ]
+    },
+    "i3_b1": {
+      "type": "Badge",
+      "props": {
+        "text": "Unverified",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "i3_body": {
+      "type": "Text",
+      "props": {
+        "text": "Scott Aaronson's post asserts OpenAI and Anthropic produced results including a claimed matrix-multiplication exponent and a Riemann Hypothesis proof, many with Lean certificates. Extraordinary claims, not independently verified here; treat as unconfirmed until the proofs are checked.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "i3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Scott Aaronson's blog post on AI and open math results",
+        "href": "https://scottaaronson.blog/?p=10379",
+        "source": "scottaaronson.blog"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "also_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "also_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "also1",
+        "also2"
+      ]
+    },
+    "also1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GPT-6.2 Astra tops Googlers' code golf records",
+        "href": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+        "source": "bjin.github.io"
+      },
+      "children": []
+    },
+    "also2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NYT warns photographers off Photoshop update over AI features",
+        "href": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+        "source": "theverge.com"
+      },
+      "children": []
+    }
+  }
+}
