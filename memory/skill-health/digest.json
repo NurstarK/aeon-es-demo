@@ -1,17 +1,21 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-26T12:58:38Z",
-  "quality_score": 2,
-  "assessment": "Digest is well-structured and hedges its extraordinary claims, but its specific CVE IDs, the 1Password incident URL, and the Aaronson and GPT-6.2 Astra details cannot be verified from the output and show no evidence of having been fetched from the stated sources.",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 2,
+  "last_analyzed": "2026-11-26T22:17:03Z",
+  "quality_score": 3,
+  "assessment": "Correctly treats a same-day re-run as a completed no-op: it reports the prior digest, changes no files, and flags the missing XAI_API_KEY, but it cannot be checked from this output alone.",
+  "flags": [],
+  "avg_score": 2.5,
   "history": [
     {
       "date": "2026-11-26",
       "score": 2,
       "ts": "2026-11-26T12:58:38Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-26",
+      "score": 3,
+      "ts": "2026-11-26T22:17:03Z",
       "harness": "claude"
     }
   ]
