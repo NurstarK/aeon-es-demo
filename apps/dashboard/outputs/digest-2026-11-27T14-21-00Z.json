@@ -1,0 +1,201 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Daily digest - 2026-11-27"
+      },
+      "children": [
+        "tldr",
+        "sep1",
+        "h1",
+        "t1a",
+        "t1b",
+        "s1",
+        "sep2",
+        "h2",
+        "t2a",
+        "t2b",
+        "s2",
+        "sep3",
+        "h3",
+        "t3a",
+        "t3b",
+        "alert3",
+        "s3",
+        "sep4",
+        "also",
+        "l1",
+        "c1",
+        "l2",
+        "l3"
+      ]
+    },
+    "tldr": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: Google sets a 1 Feb 2027 deadline forcing AI agents onto its Workspace MCP servers, an FBI sting leads to a wire-fraud indictment of a ransomware \"recovery\" firm CTO, and an unreviewed preprint claims a faster discrete-log algorithm.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "h1": {
+      "type": "Heading",
+      "props": {
+        "text": "1. Google forces AI agents onto Workspace MCP servers from 1 Feb 2027",
+        "level": "h3"
+      }
+    },
+    "t1a": {
+      "type": "Text",
+      "props": {
+        "text": "Google made eight Workspace MCP servers GA on 24 Nov. From 1 Feb 2027, tools \"driven by an AI Agent\" must use them, or direct REST calls get Standard-tier quotas (5,000 MCP requests/project/day; a Gmail search counts as 10). The public Gmail server cannot send, reply, forward, or edit drafts; those need partner access.",
+        "variant": "body"
+      }
+    },
+    "t1b": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: any agent that sends Gmail or calls Workspace REST APIs needs migrating or a partner-access request before February. Paid Scaled-tier billing starts 1 Apr 2027.",
+        "variant": "muted"
+      }
+    },
+    "s1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Google Workspace AI agents MCP",
+        "href": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+        "source": "techstackups.com"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "h2": {
+      "type": "Heading",
+      "props": {
+        "text": "2. RansomwareHelp CTO indicted for wire fraud after FBI sting",
+        "level": "h3"
+      }
+    },
+    "t2a": {
+      "type": "Text",
+      "props": {
+        "text": "Juan Ricardo Palacio Escobar is charged in Rhode Island. The firm told victims it used \"advanced cryptographic tools\" but allegedly paid the ransomware groups for keys. In the sting it quoted 0.2 BTC (~$13k), negotiated to ~$6k, and billed the \"victim\" $16,010. Related cases: Cybersteward (Oct 2026), MonsterCloud (paid $8M, charged $19M).",
+        "variant": "body"
+      }
+    },
+    "t2b": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: if you hire a ransomware recovery vendor, ask whether they negotiate with the attackers.",
+        "variant": "muted"
+      }
+    },
+    "s2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "CTO of RansomwareHelp indicted for wire fraud",
+        "href": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+        "source": "krebsonsecurity.com"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "h3": {
+      "type": "Heading",
+      "props": {
+        "text": "3. Preprint claims deterministic subexponential discrete-log algorithm (unverified)",
+        "level": "h3"
+      }
+    },
+    "t3a": {
+      "type": "Text",
+      "props": {
+        "text": "IACR ePrint 2026/3020 (Zhejiang University) claims 2^{O(b/√loglog b)} time for prime fields and prime-order elliptic curves, conditional on a construction it attributes to OpenAI. Received 24 Nov, not peer reviewed, and I could not verify the attribution.",
+        "variant": "body"
+      }
+    },
+    "t3b": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: if it held up, it would threaten ECC and DH. Treat it as a claim to watch for expert rebuttal, not a reason to change anything yet.",
+        "variant": "muted"
+      }
+    },
+    "alert3": {
+      "type": "Alert",
+      "props": {
+        "title": "Unverified",
+        "message": "Not peer reviewed; the OpenAI attribution could not be verified.",
+        "type": "warning"
+      }
+    },
+    "s3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "IACR ePrint 2026/3020",
+        "href": "https://eprint.iacr.org/2026/3020",
+        "source": "eprint.iacr.org"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "also": {
+      "type": "Text",
+      "props": {
+        "text": "Also worth a glance:",
+        "variant": "lead"
+      }
+    },
+    "l1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "US Air Force cloud platform reported hacked",
+        "href": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+        "source": "Sky News"
+      }
+    },
+    "c1": {
+      "type": "Text",
+      "props": {
+        "text": "I could not fetch details.",
+        "variant": "caption"
+      }
+    },
+    "l2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "AMD-specific llama.cpp fork",
+        "href": "https://devnull.land/amd-specific-llama-cpp",
+        "source": "devnull.land"
+      }
+    },
+    "l3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NY and CA age-gating rules take effect in the new year",
+        "href": "https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year",
+        "source": "EFF"
+      }
+    }
+  }
+}

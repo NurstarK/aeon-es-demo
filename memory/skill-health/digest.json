@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-11-26T22:17:03Z",
-  "quality_score": 3,
-  "assessment": "Correctly treats a same-day re-run as a completed no-op: it reports the prior digest, changes no files, and flags the missing XAI_API_KEY, but it cannot be checked from this output alone.",
+  "last_analyzed": "2026-11-27T14:21:00Z",
+  "quality_score": 4,
+  "assessment": "Well-structured, dated digest with linked sources and honest hedging on unverified items (ePrint attribution, Sky News fetch); the specific claims could not be checked here, and a few references (Cybersteward, MonsterCloud, the llama.cpp fork) lack links or detail.",
   "flags": [],
-  "avg_score": 2.5,
+  "avg_score": 3,
   "history": [
     {
       "date": "2026-11-26",
@@ -16,6 +16,12 @@
       "date": "2026-11-26",
       "score": 3,
       "ts": "2026-11-26T22:17:03Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-27",
+      "score": 4,
+      "ts": "2026-11-27T14:21:00Z",
       "harness": "claude"
     }
   ]

@@ -12,6 +12,7 @@
 | Date | Type | Key Topics |
 |------|------|------------|
 | 2026-11-26 | general | 1Password breach, Ubuntu kernel patch lag, AI math claims |
+| 2026-11-27 | general | Google Workspace MCP mandate, RansomwareHelp indictment, DLP preprint |
 
 ## Skills Built
 | Skill | Date | Notes |
