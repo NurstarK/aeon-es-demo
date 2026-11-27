@@ -1,0 +1,98 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "status_badge",
+        "stalled_alert",
+        "stalled_heading",
+        "prs_table",
+        "sep",
+        "fleet_status",
+        "heartbeat_stat"
+      ]
+    },
+    "status_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "🟡 STALLED",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "stalled_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 STALLED",
+        "message": "4 open Dependabot PRs >24h (~25h)",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "stalled_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled Dependabot PRs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "prs_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "#",
+          "PR"
+        ],
+        "rows": [
+          [
+            "1",
+            "mcp-server group"
+          ],
+          [
+            "2",
+            "wrangler bump"
+          ],
+          [
+            "3",
+            "upload-artifact 7.0.2"
+          ],
+          [
+            "4",
+            "dashboard group"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "fleet_status": {
+      "type": "Text",
+      "props": {
+        "text": "Fleet otherwise healthy (digest, heartbeat 100%), no open issues.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "heartbeat_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Heartbeat",
+        "value": "100%",
+        "trend": "neutral"
+      },
+      "children": []
+    }
+  }
+}
